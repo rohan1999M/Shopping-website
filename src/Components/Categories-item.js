@@ -15,4 +15,4 @@ const {imageUrl,title} = props;
                     </div>
     )
 }
-export default CategoriesItems;
+export default CategoriesItems; 
