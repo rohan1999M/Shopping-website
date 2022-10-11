@@ -6,6 +6,7 @@ import './Button-styles.scss';
 const Button_type_Classes = {
     google: 'google-sign-in',
     inverted: 'inverted',
+    custom: 'rohan',
 }
 
 

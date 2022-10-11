@@ -1,0 +1,25 @@
+.authentication-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    
+    margin: 30px auto;
+
+    
+}
+
+h2{
+    color: red; 
+}
+
+h1{
+    color: blueviolet;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 15px;
+    border-style: dashed;
+    display: inline-block;
+    border-color: black;
+    padding: 15px;
+    border-radius: 30px;
+}

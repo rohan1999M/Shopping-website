@@ -3,7 +3,7 @@ import { BrowserRouter, Routes , Route} from 'react-router-dom';
 // import Categories from "./Components/Categories";
 import Home from './Components/Routes/Home/Home';
 import NavigationBar from './Components/Routes/Navigation';
-import SignIn from './Components/Routes/SignIn';
+import Authentication from './Components/Routes/Authentication';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <Route path='/' element={<NavigationBar/>}>
      <Route index element={<Home/>}/>
     
-     <Route path='signIn' element={<SignIn/>}/>
+     <Route path='auth' element={<Authentication/>}/>
 
     </Route>
     </Routes>
