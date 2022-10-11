@@ -1,39 +1,37 @@
 import React from "react";
+
 import{
+    auth,
 signInWithGooglePopup,
 creatUserDocumentFromAuth,
+logGoogleRedirectUser,
+signInWithGoogleRedirect,
+
 
 } from '../../utils/firebase/firebaseUtils';
+// import { useFetcher } from "react-router-dom";
+import { async } from "@firebase/util";
 
-// import{    signInWithGooglePopup,
-// createUserProfileDocument,
-// } from '../../utils/firebase/firebase.utils';
+import SignUpForm from "../SignUp";
 
-// function SignIn (){
-
-//     const logGoogleUser = async()=>{
-//         const response = await signInWithGooglePopup();
-//         createUserProfileDocument(response);
-//     };
-//     return(
-//         <div>
-//         <h1>Sign In Page</h1>
-//         <button onClick={logGoogleUser}>Sign in with Google Popup</button>
-//         </div>
-//     )
-
-// }
 
 function SignIn(){
+
+
+
+
 
     const logGoogleUser = async()=>{
         const response = await signInWithGooglePopup();
         const userDocRef = creatUserDocumentFromAuth(response.user)
     }
 
+
+
     return (
         <div> Sign in page
         <button onClick={logGoogleUser}>sign in with google</button>
+        <SignUpForm/>
         </div>
     )
 }
