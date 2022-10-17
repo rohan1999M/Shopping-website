@@ -41,7 +41,7 @@ const handleSubmit = async (event)=>{
 
 try{
        const {user} = await signInAuthUserWithEmailAndPassword(email,password);
-       console.log(user)
+    //    console.log(user)
     //    setCurrentUser(user);
        resetFormFields();
 
