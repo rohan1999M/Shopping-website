@@ -9,6 +9,7 @@ createUserWithEmailAndPassword,
 sendPasswordResetEmail,
 signInWithEmailAndPassword,
 signOut,
+onAuthStateChanged,
 
 } from 'firebase/auth';
 
@@ -85,3 +86,5 @@ export const signInAuthUserWithEmailAndPassword = async (email,password)=>{
 }
 
 export const signOutUser = async () => await signOut(auth);
+
+export const onAuthStateChangedListlener = (callback)=> onAuthStateChanged(auth,callback)

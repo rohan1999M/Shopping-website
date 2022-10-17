@@ -8,15 +8,15 @@ import { signOutUser } from "../../utils/firebase/firebaseUtils";
 
 function NavigationBar (){
 
-    const {currentUser ,setCurrentUser} = useContext(UserContext);
+    const {currentUser} = useContext(UserContext);
     console.log(currentUser);
 
-    const signOutHandler = async () => {
-         await signOutUser();
-         setCurrentUser(null);
+    // const signOutHandler = async () => {
+    //      await signOutUser();
+    //       setCurrentUser(null);
 
         
-    }
+    // }
 
 
     return(
@@ -30,7 +30,7 @@ function NavigationBar (){
         <Link className="nav-link" to ='/Contat'>CONTACT</Link>
         {      
            // if current user exits then it will render the sign out.
-          currentUser ? (<span className="nav-link" onClick={signOutHandler}>SIGN OUT</span>):
+          currentUser ? (<span className="nav-link" onClick={signOutUser}>SIGN OUT</span>):
           ( <Link className="nav-link" to ='/auth'>SIGN IN</Link> )
         }
        
