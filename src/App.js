@@ -5,6 +5,7 @@ import Home from './Components/Routes/Home/Home';
 import NavigationBar from './Components/Routes/Navigation';
 import Authentication from './Components/Routes/Authentication';
 import Shop from './Shop/Shop';
+import Checkout from './CheckOut/checkout';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
      <Route path='shop' element={<Shop/>}/>
      <Route path='contact' element={<></>}/>
      <Route path='auth' element={<Authentication/>}/>
-
+      <Route path = 'checkout' element={<Checkout/>}/>
     </Route>
     </Routes>
     </BrowserRouter>
